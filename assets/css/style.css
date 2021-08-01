@@ -319,7 +319,7 @@ ul {
   display: block;
   text-align: center;
 }
-.about__buttons {
+.about__button {
   display: flex;
   justify-content: center;
 }
