@@ -49,3 +49,48 @@ skillsHeader.forEach((n) => {
 // skillsHeader.forEach((el) => {
 //   el.addEventListener("click", toggleSkills);
 // });
+
+/*==================== qualification tabs====================*/
+const tabs = document.querySelectorAll("[data-target]");
+const tabContents = document.querySelectorAll("[data-content]");
+tabs.forEach((tab) => {
+  tab.addEventListener("click", () => {
+    // const target = document.querySelector(tab.dataset.target);
+    const target = document.querySelector(tab.getAttribute("data-target"));
+
+    tabContents.forEach((tc) => {
+      tc.classList.remove("qualification__active");
+    });
+
+    target.classList.add("qualification__active");
+
+    tabs.forEach((el) => {
+      el.classList.remove("qualification__active");
+    });
+    tab.classList.add("qualification__active");
+  });
+});
+/*==================== service mdal====================*/
+const modalViews = document.querySelectorAll(".services__modal");
+const modalBtns = document.querySelectorAll(".services__button");
+const modalCloses = document.querySelectorAll(".services__modal-close");
+
+modalBtns.forEach((modalBtn, i) => {
+  modalBtn.addEventListener("click", () => {
+    modalViews[i].classList.add("active-modal");
+  });
+});
+modalCloses.forEach((modalClose, i) => {
+  modalClose.addEventListener("click", () => {
+    modalViews.forEach((element) => {
+      element.classList.remove("active-modal");
+    });
+  });
+});
+modalViews.forEach((element) => {
+  element.addEventListener("click", (e) => {
+    // console.log(e.currentTarget + "  " + e.target);
+    if (e.target !== e.currentTarget) return;
+    element.classList.remove("active-modal");
+  });
+});
