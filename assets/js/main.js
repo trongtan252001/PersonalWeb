@@ -70,7 +70,7 @@ tabs.forEach((tab) => {
     tab.classList.add("qualification__active");
   });
 });
-/*==================== service mdal====================*/
+/*==================== service modal====================*/
 const modalViews = document.querySelectorAll(".services__modal");
 const modalBtns = document.querySelectorAll(".services__button");
 const modalCloses = document.querySelectorAll(".services__modal-close");
@@ -89,8 +89,22 @@ modalCloses.forEach((modalClose, i) => {
 });
 modalViews.forEach((element) => {
   element.addEventListener("click", (e) => {
-    // console.log(e.currentTarget + "  " + e.target);
+    console.log(e.currentTarget + "  " + e.target);
     if (e.target !== e.currentTarget) return;
     element.classList.remove("active-modal");
   });
+});
+
+/*==================== portfolio swiper ====================*/
+let swiper = new Swiper(".portfolio__container", {
+  cssMode: true,
+  loop: true,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
 });
