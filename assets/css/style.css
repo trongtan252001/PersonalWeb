@@ -281,10 +281,19 @@ li {
 .button:hover {
   background-color: var(--first-color-alt);
 }
+
 .button__icon {
+  display: inline-block;
   font-size: 1.25rem;
   margin-left: var(--mb-0-5);
   transition: 0.3s;
+}
+.button--white {
+  background-color: #fff;
+  color: var(--first-color);
+}
+.button--white:hover {
+  background-color: #fff;
 }
 .button--flex {
   display: inline-block;
@@ -498,7 +507,7 @@ li {
 .qualification__button.qualification__active {
   color: var(--first-color);
 }
-/* ==================== Services 3==================== */
+/* ==================== Services==================== */
 .services__container {
   gap: 1.5rem;
   grid-template-columns: repeat(2, 1fr);
@@ -530,7 +539,6 @@ li {
   font-size: var(--small-font-size);
 }
 .services__button:hover .button__icon {
-  display: inline-block;
   transform: translateX(0.25rem);
 }
 .services__modal {
@@ -581,4 +589,76 @@ li {
 .active-modal {
   opacity: 1;
   visibility: visible;
+}
+/* ==================== PORTFOLIO====================*/
+.portfolio__container {
+  overflow: initial;
+}
+.portfolio__content {
+  padding: 0 1.5rem;
+}
+.portfolio__img {
+  width: 265px;
+  border-radius: 0.5rem;
+  justify-self: center;
+}
+.portfolio__title {
+  font-size: var(--h3-font-size);
+  margin-bottom: var(--mb-0-5);
+}
+.portfolio__description {
+  margin-bottom: var(--mb-0-75);
+}
+.portfolio__button:hover .button__icon {
+  transform: translateX(0.25rem);
+}
+.swiper-button-next:after,
+.swiper-button-prev:after {
+  content: "";
+}
+.swiper-portfolio-icon {
+  font-size: 2rem;
+  color: var(--first-color);
+}
+.swiper-button-prev {
+  left: -0.5rem;
+}
+.swiper-button-next {
+  right: -0.5rem;
+}
+
+.swiper-container-horizontal > .swiper-pagination-bullets {
+  bottom: -2.5rem;
+}
+.swiper-pagination-bullet-active {
+  background-color: var(--first-color);
+}
+.swiper-button-prev,
+.swiper-button-next,
+.swiper-pagination-bullet {
+  outline: none;
+}
+/* ==================== Project in mind====================*/
+.project {
+  text-align: center;
+}
+.project__bg {
+  background-color: var(--first-color);
+  padding-top: 3rem;
+}
+
+.project__title {
+  font-size: var(--h2-font-size);
+  margin-bottom: var(--mb-0-75);
+}
+.project__description {
+  margin-bottom: var(--mb-1-5);
+}
+.project__title,
+.project__description {
+  color: rgb(255, 255, 255);
+}
+.project__img {
+  width: 232px;
+  justify-self: center;
 }
