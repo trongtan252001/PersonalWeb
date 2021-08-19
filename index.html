@@ -22,7 +22,7 @@
             <div class="nav__menu" id="nav-menu">
                 <ul class="nav__list grid">
                     <li class="nav__item">
-                        <a href="#home" class="nav__link ">
+                        <a href="#home" class="nav__link active-link">
                             <i class="uil uil-estate nav__icon"></i>Home
                         </a>
                     </li>
@@ -55,6 +55,9 @@
                 <i class="uil uil-times nav__close" id="nav-close"></i>
             </div>
             <div class="nav__btns">
+                <!-- Theme change button -->
+                <i class="uil uil-moon change-theme" id="theme-button"></i>
+
                 <div class="nav__toggle" id="nav-toggle">
                     <i class="uil uil-apps"></i>
                 </div>
@@ -62,7 +65,7 @@
         </nav>
     </header>
     <!-- *tag main chi duy nhat chi 1 va ko la tag con <article>, <aside>, <footer>, <header>, or <nav> element.-->
-    <main>
+    <main class="main">
     <!-- *home -->
         <section class="home section" id="home">
             <div class="home__container container grid">
@@ -135,13 +138,13 @@
                             <span class="about__info-name">Companies <br> worked</span>
                         </div>
                     </div>
+                    <div class="about__button">
+                        <a download="" href="" class="button button--flex">
+                            Download CV<i class="uil uil-download-alt button__icon"></i>
+                        </a>
+                    </div>
                 </div>
 
-                <div class="about__button">
-                    <a download="" href="" class="button button--flex">
-                        Download CV<i class="uil uil-download-alt button__icon"></i>
-                    </a>
-                </div>
             </div>
         </section>
         <!-- *skills -->
@@ -157,7 +160,7 @@
                             <i class="uil uil-brackets-curly skills__icon"></i>
 
                             <div>
-                                <h1 class="skills__titles">Fromend developer</h1>
+                                <h1 class="skills__title">Fromend developer</h1>
                                 <span class="skills__subtitle">More than 4 years</span>
                             </div>
                             <i class="uil uil-angle-down skills__arrow"></i>
@@ -167,7 +170,7 @@
 
 
                             <div class="skills__data">
-                                <div class="skills__titles">
+                                <div class="skills__title">
                                     <h3 class="skills__name">HTML</h3>
                                     <span class="skills__number">90%</span>
                                 </div>
@@ -177,7 +180,7 @@
                             </div>
 
                             <div class="skills__data">
-                                <div class="skills__titles">
+                                <div class="skills__title">
                                     <h3 class="skills__name">CSS</h3>
                                     <span class="skills__number">80%</span>
                                 </div>
@@ -187,7 +190,7 @@
                             </div>
 
                             <div class="skills__data">
-                                <div class="skills__titles">
+                                <div class="skills__title">
                                     <h3 class="skills__name">JavaScript</h3>
                                     <span class="skills__number">60%</span>
                                 </div>
@@ -197,7 +200,7 @@
                             </div>
 
                             <div class="skills__data">
-                                <div class="skills__titles">
+                                <div class="skills__title">
                                     <h3 class="skills__name">React</h3>
                                     <span class="skills__number">85%</span>
                                 </div>
@@ -214,7 +217,7 @@
                             <i class="uil uil-server-network skills__icon"></i>
 
                             <div>
-                                <h1 class="skills__titles">Backend developer</h1>
+                                <h1 class="skills__title">Backend developer</h1>
                                 <span class="skills__subtitle">More than 2 years</span>
                             </div>
                             <i class="uil uil-angle-down skills__arrow"></i>
@@ -224,7 +227,7 @@
 
 
                             <div class="skills__data">
-                                <div class="skills__titles">
+                                <div class="skills__title">
                                     <h3 class="skills__name">PHP</h3>
                                     <span class="skills__number">80%</span>
                                 </div>
@@ -234,7 +237,7 @@
                             </div>
 
                             <div class="skills__data">
-                                <div class="skills__titles">
+                                <div class="skills__title">
                                     <h3 class="skills__name">Node Js</h3>
                                     <span class="skills__number">70%</span>
                                 </div>
@@ -244,7 +247,7 @@
                             </div>
 
                             <div class="skills__data">
-                                <div class="skills__titles">
+                                <div class="skills__title">
                                     <h3 class="skills__name">Firebase</h3>
                                     <span class="skills__number">90%</span>
                                 </div>
@@ -254,7 +257,7 @@
                             </div>
 
                             <div class="skills__data">
-                                <div class="skills__titles">
+                                <div class="skills__title">
                                     <h3 class="skills__name">Phython</h3>
                                     <span class="skills__number">55%</span>
                                 </div>
@@ -271,7 +274,7 @@
                         <div class="skills__header">
                             <i class="uil uil-swatchbook skills__icon"></i>
                             <div>
-                                <h1 class="skills__titles">Designer</h1>
+                                <h1 class="skills__title">Designer</h1>
                                 <span class="skills__subtitle">More than 5 years</span>
                             </div>
                             <i class="uil uil-angle-down skills__arrow"></i>
@@ -281,7 +284,7 @@
 
 
                             <div class="skills__data">
-                                <div class="skills__titles">
+                                <div class="skills__title">
                                     <h3 class="skills__name">Figma</h3>
                                     <span class="skills__number">90%</span>
                                 </div>
@@ -291,7 +294,7 @@
                             </div>
 
                             <div class="skills__data">
-                                <div class="skills__titles">
+                                <div class="skills__title">
                                     <h3 class="skills__name">Sketch</h3>
                                     <span class="skills__number">85%</span>
                                 </div>
@@ -301,7 +304,7 @@
                             </div>
 
                             <div class="skills__data">
-                                <div class="skills__titles">
+                                <div class="skills__title">
                                     <h3 class="skills__name">Photoshop</h3>
                                     <span class="skills__number">85%</span>
                                 </div>
@@ -653,7 +656,7 @@
         <!-- project in mind  -->
         <section class="project section" >
             <div class="project__bg">
-                <div class="project__container container">
+                <div class="project__container container grid">
                     <div class="project__data">
                         <h2 class="project__title">You hae a new project</h2>
                         <p class="project__description">Contact me now and get a 30% discount.</p>
@@ -662,9 +665,9 @@
                             <i class="uil uil-message project__icon button__icon"></i>
                         </a>
                     </div>
+                    <img src="assets/img/project.png" alt="" class="project__img">
                 </div>
 
-                <img src="assets/img/project.png" alt="" class="project__img">
             </div>
         </section>
         <!-- * testimonial  -->
@@ -842,6 +845,11 @@
         </footer>
 
     </main>
+
+    <!-- * Scroll Top -->
+    <a href="#" class="scrollup" id="scroll-up">
+        <i class="uil uil-arrow-up scrollup__icon"></i>
+    </a>
     <!-- * swiper js -->
     <script src="assets/js/swiper-bundle.min.js"></script>
     <!-- * main js -->
